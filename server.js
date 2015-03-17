@@ -10,7 +10,6 @@ server.use(express.static(__dirname + '/public'));
 
 // api
 server.get('/item', function(req, res) {
-  console.log('request for item')
   res.json(itemJSON);
 });
 server.get('/', function(req, res) {
